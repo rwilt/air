@@ -4,9 +4,11 @@ const ffprobe = require('ffprobe');
 const probe = require('node-ffprobe');
 const { create } = require('domain');
 
+//these are just the live URLs - we don't need them in the code, but here they are if you need to see them! 
 let url1 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4'
 let url2 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4'
 
+//our function executes a shell command to create our text file. using the files we passed in.
 function createFileDoc(file1,file2, file3){
     const { exec } = require("child_process");
 
@@ -26,6 +28,7 @@ function createFileDoc(file1,file2, file3){
     
     }
 
+//our converter function uses that text file to give us our video. This video appears in our directory once complete.
 function convert() {
 const { exec } = require("child_process");
 
