@@ -2,12 +2,13 @@
 ### How to Use
 
 This app requires a few tools:
-
-Express - npm install express
-bodyParser - npm install bodyParser
-Ffmpeg - npm install ffmpeg
-Ffmpeg-fluent - npm install ffmpeg-fluent
-Node-Ffprobe -  npm install node-ffprob
+<ul>
+<li>Express - npm install express</li>
+<li>bodyParser - npm install bodyParser</li>
+<li>Ffmpeg - npm install ffmpeg</li>
+<li>Ffmpeg-fluent - npm install ffmpeg-fluent</li>
+<li>Node-Ffprobe -  npm install node-ffprob</li>
+</ul>
 
 1. Fork & Clone this repo 
 2. CD into the directory ('Air)
