@@ -13,11 +13,12 @@ This app requires a few tools:
 ### Install 
 
 1. Fork & Clone this repo 
-2. CD into the directory ('Air)
+2. CD into the directory ('Air')
 3. Run 'npm install'
 4. Run 'node index.js' and 'open form.html'
 5. Input your files to concatenate. Note: Ffmpeg can handle more than 3 files, but I was (very) short on time.
 6. When you submit, the process will begin and your completed file will appear as finalVid.mp4 in the directory.
+7. Enjoy your amazingly stitched together video! 
 
 ### Notes From A Junior Programmer
 
@@ -28,6 +29,8 @@ The first is that ffmpeg does not accept URLs of videos to concatenate, only loc
 Should you need the original URLs - they are below: 
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4
 http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
+
+The second is that my frontend UI is not the most visually stimulating thing. I decided to make it silly and 90's like due to time constraints. If I had more time, I would have liked to make it prettier (like the Air site), or even lean in more to the 90's ness of it.  
 
 
 ### Credit
