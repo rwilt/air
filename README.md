@@ -10,6 +10,8 @@ This app requires a few tools:
 <li>Node-Ffprobe -  npm install node-ffprob</li>
 </ul>
 
+### Install 
+
 1. Fork & Clone this repo 
 2. CD into the directory ('Air)
 3. Run 'npm install'
