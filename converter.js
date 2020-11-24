@@ -9,10 +9,10 @@ let url1 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/For
 let url2 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4'
 
 //our function executes a shell command to create our text file. using the files we passed in.
-function createFileDoc(file1,file2, file3){
+function createFileDoc(file1,file2){
     const { exec } = require("child_process");
 
-    exec(`touch files.txt && echo file ${file1} >> files.txt && echo file ''${file2}'' >> files.txt && echo file ''${file3}'' >> files.txt` , (error, stdout, stderr) => {
+    exec(`touch files.txt && echo file ${file1} >> files.txt && echo file ''${file2}'' >> files.txt` , (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;

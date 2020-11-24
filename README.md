@@ -17,7 +17,7 @@ This app requires a few tools:
 3. Run 'npm install'
 4. Run 'node index.js' and 'open form.html'
 5. Input your files to concatenate. For this, you will use 'ForBiggerMeltdowns.mp4' and 'ForBiggerJoyrides.mp4' (no quotes).
-Note: Ffmpeg can handle more than 3 files, but I was (very) short on time.
+Note: Ffmpeg can handle more than 2 files, but I was (very) short on time. To test, id just need to add in some quick additional fields. 
 6. When you submit, the process will begin and your completed file will appear as finalVid.mp4 in the directory.
 7. Enjoy your amazingly stitched together video! 
 
