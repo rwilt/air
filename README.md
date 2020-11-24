@@ -1,22 +1,36 @@
-# air
-### **Task**
 
-Write an HTTP service which concatenates two video files into one. The service should write the resulting video file to a configurable destination (this can be local or remote). 
+### How to Use
 
-As a user, I should be able to:
+This app requires a few tools:
 
-- Send an HTTP request to the service with paths to two publicly accessible input MP4 files
-- Receive a link to the outputted MP4 file once the job has completed
+Express - npm install express
+bodyParser - npm install bodyParser
+Ffmpeg - npm install ffmpeg
+Ffmpeg-fluent - npm install ffmpeg-fluent
+Node-Ffprobe -  npm install node-ffprob
 
-For the purposes of this assignment, don’t worry about handling concurrent requests or robust error handling. No UI is required — a server-side implementation is all that's expected (but see [extensions](https://www.notion.so/aircamera/Coding-challenge-0cf23a80a7324a8daf2e8ee12c9ff6ad#813d278388c146deb69ce92e9228a66e) below for more info).
+1. Fork & Clone this repo 
+2. CD into the directory ('Air)
+3. Run 'npm install'
+4. Run 'node index.js' and 'open form.html'
+5. Input your files to concatenate. Note: Ffmpeg can handle more than 3 files, but I was (very) short on time.
+6. When you submit, the process will begin and your completed file will appear as finalVid.mp4 in the directory.
 
-You can use any languages, packages, frameworks, and libraries you’d like to complete the assignment. Please cite any code you copy from other sources, like StackOverflow or Github.
+### Notes From A Junior Programmer
+
+First - thank you so much for the opportunity to work on this problem. It was engaging, fun, challenging as heck and I hope it's okay to say, but I'm proud of how far I got with this challenge, although I freely admit to some shortcomings. 
+
+The first is that ffmpeg does not accept URLs of videos to concatenate, only local paths. Had I more time, I would have worked on having the urls saved and turned into local files. Instead, I went with giving them to you in this repo so you will unfortunately have to copy the local paths into the form to use them. They will be ForBiggerMeltdowns.mp4 and ForBiggerJoyrides.mp4. 
+
+Should you need the original URLs - they are below: 
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4
+http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4
 
 
-### What You Need
+### Credit
+<h2>(Also commented in the code where needed)</h2>
 
-Fluent Ffmpeg - npm install fluent-ffmpeg
-Ffmpeg Contat fmpeg-concat 
-
-let url1 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4'
-let url2 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4'
+https://trac.ffmpeg.org/wiki/Concatenate
+https://stackabuse.com/executing-shell-commands-with-node-js/
+https://superuser.com/questions/1059245/ffmpeg-join-two-mp4-files-with-ffmpeg-on-command-line
+https://stackoverflow.com/questions/52675257/how-to-send-data-from-html-to-node-js/52675577

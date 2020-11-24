@@ -3,14 +3,14 @@ const ffmpeg2 = require('ffmpeg');
 const ffprobe = require('ffprobe');
 const probe = require('node-ffprobe');
 const { create } = require('domain');
-// const concat = require('ffmpeg-concat')
+
 let url1 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4'
 let url2 = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4'
 
-function createFileDoc(file1,file2){
+function createFileDoc(file1,file2, file3){
     const { exec } = require("child_process");
 
-    exec(`touch files.txt && echo file ${file1} >> files.txt && echo file ''${file2}'' >> files.txt` , (error, stdout, stderr) => {
+    exec(`touch files.txt && echo file ${file1} >> files.txt && echo file ''${file2}'' >> files.txt && echo file ''${file3}'' >> files.txt` , (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
